@@ -37,6 +37,11 @@ spec:
               configMapKeyRef:
                 name: config
                 key: ISTIO_HOST
+          - name: ADD_FSGROUP
+            valueFrom:
+              configMapKeyRef:
+                name: config
+                key: ADD_FSGROUP
           - name: CLUSTER_DOMAIN
             valueFrom:
               configMapKeyRef:
